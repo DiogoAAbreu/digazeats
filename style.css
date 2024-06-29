@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 414px;
+    background-color: #EEEEEE;
+}
+
+h2 {
+    font-family: "Righteous", sans-serif;
+    font-size: 26px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+    color: #a6a6a6;
+    font-weight: 300;
+}
+
+img {
+    width: 144px;
+    height: 87px;
+    object-fit: cover;
+}
+
+button {
+    border: none;
+}
+
+.icone {
+    font-size: 19px;
+    color: #32b72f;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+}
+
+.opcao.selecionado>.icone {
+    opacity: 1;
+}
+
+.topo {
+    background-color: #000042;
+    height: 92px;
+    width: 414px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.topo p {
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+
+.topo h2 {
+    color: white;
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+.conteudo {
+    margin: 92px 0px;
+}
+
+.pratos,
+.sobremesas,
+.bebidas {
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+.pratos h2,
+.sobremesas h2,
+.bebidas h2 {
+    margin: 20px 0px 10px 10px;
+}
+
+.prato,
+.bebida,
+.sobremesa {
+    display: flex;
+}
+
+.prato div,
+.bebida div,
+.sobremesa div {
+    background-color: white;
+    width: 172px;
+    height: 216px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 9px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.valor {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.barra-inferior {
+    background-color: white;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.finalizar-pedido {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #CBCBCB;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.overlay {
+    width: 414px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confimacao {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white
+}
+
+.confimacao>p {
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+}
+
+.confirmar {
+    width: 329px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cancelar {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pedido {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.selecionado {
+    border: #32b72f 5px solid;
+    padding: 15px 5px;
+    opacity: 1;
+}
+
+.ativo {
+    background-color: #32b72f;
+}
+
+.escondido {
+    display: none;
+}
+
+.pedido {
+    font-size: 22px;
+    color: white;
+}
+
+.pedido div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.pedido div span {
+    font-size: 22px;
+}
+
+.pedido div:nth-child(4) {
+    font-weight: 700;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigazEats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <div class="topo">
+        <h2>DigazEats</h2>
+        <p>Sua comida em 8 minutos</p>
+    </div>
+
+    <div class="conteudo">
+        <div class="pratos">
+            <h2>Primeiro, seu prato</h2>
+
+            <div class="prato">
+                <div class="opcao" onclick="selecionarPrato(this)">
+                    <img src="img/podrao.jpg">
+                    <h3 class="titulo">X-Digaz Boladão</h3>
+                    <p>O podrão mais brabo do Bairro</p>
+                    <p class="valor">R$ 10,00</p>
+                    <ion-icon class="icone" name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarPrato(this)">
+                    <img src="img/podrao.jpg">
+                    <h3 class="titulo">X-Digaz Boladão</h3>
+                    <p>O podrão mais brabo do Bairro</p>
+                    <p class="valor">R$ 11,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarPrato(this)">
+                    <img src="img/podrao.jpg">
+                    <h3 class="titulo">X-Digaz Boladão</h3>
+                    <p>O podrão mais brabo do Bairro</p>
+                    <p class="valor">R$ 12,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarPrato(this)">
+                    <img src="img/podrao.jpg">
+                    <h3 class="titulo">X-Digaz Boladão</h3>
+                    <p>O podrão mais brabo do Bairro</p>
+                    <p class="valor">R$ 13,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="bebidas">
+            <h2>Agora, sua bebida</h2>
+
+            <div class="bebida">
+                <div class="opcao" onclick="selecionarBebida(this)">
+                    <img src="img/zero.jpg">
+                    <h3 class="titulo">Coquinha Zero</h3>
+                    <p>Zero para manter a dieta</p>
+                    <p class="valor">R$ 5,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarBebida(this)">
+                    <img src="img/zero.jpg">
+                    <h3 class="titulo">Coquinha Zero</h3>
+                    <p>Zero para manter a dieta</p>
+                    <p class="valor">R$ 6,50</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarBebida(this)">
+                    <img src="img/zero.jpg">
+                    <h3 class="titulo">Coquinha Zero</h3>
+                    <p>Zero para manter a dieta</p>
+                    <p class="valor">R$ 7,50</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarBebida(this)">
+                    <img src="img/zero.jpg">
+                    <h3 class="titulo">Coquinha Zero</h3>
+                    <p>Zero para manter a dieta</p>
+                    <p class="valor">R$ 8,50</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <div class="sobremesas">
+            <h2>Por fim, sua sobremesa</h2>
+
+            <div class="sobremesa">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
+                    <img src="img/acai.webp">
+                    <h3 class="titulo">Açaizinho</h3>
+                    <p>Para terminar de arrematar</p>
+                    <p class="valor">R$ 8,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarSobremesa(this)">
+                    <img src="img/acai.webp">
+                    <h3 class="titulo">Açaizinho</h3>
+                    <p>Para terminar de arrematar</p>
+                    <p class="valor">R$ 9,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarSobremesa(this)">
+                    <img src="img/acai.webp">
+                    <h3 class="titulo">Açaizinho</h3>
+                    <p>Para terminar de arrematar</p>
+                    <p class="valor">R$ 10,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+
+                <div class="opcao" onclick="selecionarSobremesa(this)">
+                    <img src="img/acai.webp">
+                    <h3 class="titulo">Açaizinho</h3>
+                    <p>Para terminar de arrematar</p>
+                    <p class="valor">R$ 11,00</p>
+                    <ion-icon class="icone " name="checkmark-circle-sharp"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra-inferior">
+        <button class="finalizar-pedido" onclick="fazerPedido()">Selecione os 3 itens</br>
+            para fechar o pedido</button>
+    </div>
+
+    <div class="overlay escondido">
+        <div class="confimacao">
+            <p>Confimer seu pedido</p>
+            <div class="pedido">
+                <div>
+                    <span class="titulo-prato"></span>
+                    <soan class="valor-prato"></span>
+                </div>
+                <div>
+                    <span class="titulo-bebida"></span>
+                    <span class="valor-bebida"></span>
+                </div>
+                <div>
+                    <span class="titulo-sobremesa"></span>
+                    <span class="valor-sobremesa"></span>
+                </div>
+                <div>
+                    <span>TOTAL</span>
+                    <span class="valor-total"></span>
+                </div>
+            </div>
+            <div class="confirmar" onclick="enviarPedido()">Tudo certo, pode pedir!</div>
+            <div class="cancelar" onclick="cancelar()">Cancelar</div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
