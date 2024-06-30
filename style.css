@@ -97,9 +97,7 @@ button {
     display: flex;
 }
 
-.prato div,
-.bebida div,
-.sobremesa div {
+.opcao {
     background-color: white;
     width: 172px;
     height: 216px;
@@ -197,7 +195,7 @@ button {
 
 .selecionado {
     border: #32b72f 5px solid;
-    padding: 15px 5px;
+    padding: 15px 5px 15px 6px;
     opacity: 1;
 }
 

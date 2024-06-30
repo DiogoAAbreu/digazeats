@@ -18,7 +18,7 @@ let nome, endereco;
 
 
 function selecionarPrato(elemento) {
-    const pratoSelecionado = document.querySelector('.prato .selecionado');
+    const pratoSelecionado = document.querySelector('.selecionado');
 
     if (pratoSelecionado) {
         pratoSelecionado.classList.remove('selecionado');
@@ -84,6 +84,8 @@ function fazerPedido() {
 
     const over = document.querySelector('.overlay');
     if (prato.titulo !== '' && bebida.titulo !== '' && sobremesa.titulo !== '') {
+        nome = prompt('Qual seu nome?')
+        endereco = prompt('Passa o endereco aí!')
         over.classList.remove('escondido')
     }
 
@@ -106,8 +108,6 @@ function fazerPedido() {
 
     document.querySelector('.valor-total').innerHTML = valor;
 
-    nome = prompt('Qual seu nome?')
-    endereco = prompt('Passa o endereco aí!')
 }
 
 function cancelar() {
